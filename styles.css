@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: linear-gradient(90deg, #8a6c00, #ffd700);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Section */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid #ffd700;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.7);
+}
+
+/* Luxury Buttons */
+.button {
+    background: linear-gradient(90deg, #d4af37, #ffd700);
+    color: #000;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #ffd700, #fff);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.7);
+}
+
+/* Cart */
+.cart {
+    background: rgba(255, 215, 0, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Checkout */
+.checkout-section, .qr-section {
+    display: none;
+    background: rgba(255, 215, 0, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* QR Code */
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    padding: 15px;
+}
+
+/* Order Section */
+.order-section {
+    padding: 40px;
+    background-color: #1a1a1a;
+}
+
+.order-details {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(255, 215, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.order-details p {
+    font-size: 18px;
+    color: #ffd700;
+    margin: 10px 0;
+}
+
+.order-details button {
+    background: linear-gradient(90deg, #d4af37, #ffd700);
+    color: #000;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+    margin-top: 20px;
+}
+
+.order-details button:hover {
+    background: linear-gradient(90deg, #ffd700, #fff);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.7);
+}
+
+/* Checkout Section */
+.checkout-section {
+    padding: 40px;
+    background-color: #1a1a1a;
+}
+
+.checkout-form {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(255, 215, 0, 0.5);
+}
+
+.checkout-form label {
+    font-size: 18px;
+    color: #ffd700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkout-form .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ffd700;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.checkout-form .input-field:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0px 0px 5px rgba(255, 215, 0, 0.7);
+}
+
+.checkout-form button {
+    background: linear-gradient(90deg, #d4af37, #ffd700);
+    color: #000;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.checkout-form button:hover {
+    background: linear-gradient(90deg, #ffd700, #fff);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.7);
+}
+/* Contact Us Section */
+.contact-us-section {
+    background: rgba(255, 215, 0, 0.15); /* Luxurious golden background */
+    padding: 40px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.7);
+    text-align: center;
+}
+
+.contact-us-section h2 {
+    font-size: 36px;
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-us-section p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-us-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-us-section label {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-us-section input[type="text"],
+.contact-us-section input[type="email"],
+.contact-us-section textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background-color: rgba(255, 215, 0, 0.1);
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.contact-us-section textarea {
+    height: 150px;
+}
+
+.contact-us-section input[type="text"]:focus,
+.contact-us-section input[type="email"]:focus,
+.contact-us-section textarea:focus {
+    border-color: #d4af37;
+    background-color: rgba(255, 215, 0, 0.2);
+    outline: none;
+}
+
+.contact-us-section button {
+    background: linear-gradient(90deg, #d4af37, #ffd700);
+    color: #000;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.contact-us-section button:hover {
+    background: linear-gradient(90deg, #ffd700, #fff);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.7);
+}
+

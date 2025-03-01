@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNACKS4EVER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="about-us" class="about-us-section">
+        <div class="container">
+          <h2>FNACKS 🎉✨</h2>
+          <p>We are an internet shop working in LANDAU School Bayil. Opened since 28/01/2025, continuing as much as possible. THANK YOU FOR SUPPORTING US!</p>
+        </div>
+    </section>
+
+    <header>
+        <h1>FNACKS - LANDAU School Bayil 📍</h1>
+        <p>Welcome to FNACKS, your favorite shop at LANDAU School Bayil!</p>
+    </header>
+
+    <section class="section">
+        <h2>Products 🎁</h2>
+        <div class="product-list" id="product-list"></div>
+    </section>
+
+    <section class="section cart">
+        <h2>Your Cart 🛒</h2>
+        <div id="cart-items"></div>
+        <h3>Total: <span id="total-price">0.00</span> AZN</h3>
+        <input type="text" id="discount-code" placeholder="Enter discount code">
+        <button class="button" onclick="applyDiscountCode()">Apply Discount</button>
+        <button class="button" onclick="clearCart()">Clear Cart</button>
+        <button class="button" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </section>
+    
+    <section class="section checkout-section" id="checkout-section">
+        <h2>Checkout 📠</h2>
+        <p>Select payment method:</p>
+        <label><input type="radio" name="payment" value="cash"> Cash</label><br>
+        <label><input type="radio" name="payment" value="bank"> Bank Transfer (Card: 4613 8602 0387 6931)</label><br>
+        <input type="file" id="upload-confirmation" accept="image/*"><br>
+        <button class="button" onclick="confirmOrder()">Confirm Order</button>
+    </section>
+
+    <section class="section qr-section" id="qr-section">
+        <h2>Order Information 📟</h2>
+        <form id="order-info">
+            <label>Name:</label><br><input type="text" id="name"><br>
+            <label>Surname:</label><br><input type="text" id="surname"><br>
+            <label>Date:</label><br><input type="date" id="date"><br>
+            <label>Class:</label><br><input type="text" id="class"><br><br>
+            <button class="button" type="button" onclick="generateQRCode()">Generate QR Code</button>
+        </form>
+        <canvas id="qrcode"></canvas>
+    </section>
+
+    <section id="contact-us" class="contact-us-section">
+        <div class="container">
+            <h2>Contact Us 📞</h2>
+            <p>If you have any questions or need assistance, please feel free to reach out to us. We are here to help!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 FNACKS - LANDAU School Bayil</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/fnacks4ever?igsh=eTZ3cGVoNmJodzBz&utm_source=qr" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
